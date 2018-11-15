@@ -89,4 +89,5 @@ ENV PHP_POST_MAX_SIZE 10M
 VOLUME  ["/etc/mysql", "/var/lib/mysql", "/app" ]
 
 EXPOSE 80 3306
-CMD ["/run.sh"]
+CMD ["bash","/run.sh"]
+CMD /usr/sbin/apache2ctl -D FOREGROUND
