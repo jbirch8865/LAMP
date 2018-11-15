@@ -1,5 +1,4 @@
 FROM phusion/baseimage
 
 # Add image configuration and scripts
-WORKDIR /supporting_files
-ADD run.sh /run.sh
+ADD supporting_files/run.sh /run.sh
